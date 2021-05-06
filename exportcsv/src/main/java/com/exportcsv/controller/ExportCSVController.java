@@ -14,12 +14,7 @@ import java.util.Map;
 
 @RestController
 public class ExportCSVController {
-
-
-
-
-
-    @RequestMapping("/getCSV")
+    @RequestMapping("/getCSVsong")
     @ResponseBody
     public void csv(HttpServletResponse response,  @RequestParam(value = "Token", required = true) String authorization) throws IOException {
         // 构造导出数据结构
